@@ -28,6 +28,17 @@ function App() {
     <>
       {loading ? (
         <Loading></Loading>
+      ) : courses == 0 ? (
+        <div className="warning">
+          <div>You Deleted All the Courses</div>{" "}
+          <button
+            onClick={() => {
+              fetchCourses();
+            }}
+          >
+            Reload
+          </button>{" "}
+        </div>
       ) : (
         <Courses removeCourse={deleteCourse} allCourses={courses}></Courses>
       )}

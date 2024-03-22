@@ -1,5 +1,5 @@
 function Loading() {
-  return <div>Loading...</div>;
+  return <div className="warning">Loading...</div>;
 }
 
 export default Loading;

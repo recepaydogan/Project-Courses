@@ -40,7 +40,10 @@ function App() {
           </button>{" "}
         </div>
       ) : (
-        <Courses removeCourse={deleteCourse} allCourses={courses}></Courses>
+        <div>
+          <div className="title">My Courses</div>
+          <Courses removeCourse={deleteCourse} allCourses={courses}></Courses>
+        </div>
       )}
     </>
   );
